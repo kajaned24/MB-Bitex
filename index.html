@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/cycle2.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>MB BITEX</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+      <nav class="fill ">
+        <img id="logo" src="img/logo.png" alt="Bitex">
+        <ul>
+          <li> <a href="#contact"> Kontakt</a></li>
+          <li> <a href="printing.html"> Sito štampa </a></li>
+          <li> <a href="about.html"> O nama </a></li>
+          <li> <a href="#proizvodi"> Proizvodi </a></li>
+          <li> <a href="#"> Naslovna </a></li>
+        </ul>
+      </nav>
+
+      <script type="text/javascript">
+    		$(function() {
+    			$('#hamburger').click(function() {
+    				$('nav').toggle(1000);
+    			})
+    		})
+    	</script>
+
+
+      <!-- HEADER -->
+
+        <img id="hamburger" src="img/hamburger1.png">
+        <div class="header">
+          <div id="slideshow" class="cycle-slideshow">
+            <img src="img/proba.jpg" alt="Bitex">
+            <img src="img/sivenje.jpg" alt="Sivenje">
+            <img src="img/bp.jpg" alt="Bijelo Polje">
+            <img src="img/firma.png" alt="Firma">
+          </div>
+        </div>
+
+        <!-- MAIN -->
+
+        <div class="content">
+          <div class="offers">
+            <h1>Nudimo usluge štampe i veza!</h1>
+            <p id="our-offers">Proširavanjem asortimana i modernizacijom
+              proizvodnje u svoj proizvodni program uključujemo:</p>
+          </div>
+        </div>
+
+        <!--PRODUCTS  -->
+
+        <section class="products" id="proizvodi">
+            <div class="row">
+              <div class="col-sm-6">
+                  <h1>HTZ oprema</h1>
+                <div class="wrap">
+                  <img src="img/prev1.svg" id="prev" onclick="slideL(this)">
+                  <img src="gallery/htz-oprema/sl4.png" class="slideHTZ">
+                  <img src="gallery/htz-oprema/sl5.png" id="img2" class="slideHTZ">
+                  <img src="gallery/htz-oprema/sl6.png" class="slideHTZ">
+                  <img src="gallery/htz-oprema/sl7.png" class="slideHTZ">
+                  <img src="gallery/htz-oprema/sl8.png" class="slideHTZ">
+                  <img src="img/next1.svg" id="next"  onclick="slideR(this)">
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                  <h1>Sportska oprema</h1>
+                  <div class="wrap">
+                    <img src="img/prev1.svg" id="prev" onclick="slideL(this)">
+                    <img src="gallery/sportska-oprema/sl15.png" class="slideSport">
+                    <img src="gallery/sportska-oprema/sl16.png" class="slideSport">
+                    <img src="gallery/sportska-oprema/sl17.png" class="slideSport">
+                    <img src="gallery/sportska-oprema/sl18.png" class="slideSport">
+                    <img src="gallery/sportska-oprema/sl19.png" class="slideSport">
+                    <img src="gallery/sportska-oprema/sl20.png" class="slideSport">
+                    <img src="img/next1.svg" id="next" onclick="slideR(this)">
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                  <h1>Majice</h1>
+                <div class="wrap">
+                  <img src="img/prev1.svg" id="prev" onclick="slideL(this)">
+                  <img src="gallery/majice/sl12.png" class="slideShirts">
+                  <img src="gallery/majice/sl13.png" class="slideShirts">
+                  <img src="gallery/majice/sl14.png" class="slideShirts">
+                  <img src="img/next1.svg" id="next" onclick="slideR(this)">
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                  <h1>Zdravstvo</h1>
+                  <div class="wrap">
+                    <img src="img/prev1.svg" id="prev" onclick="slideL(this)">
+                    <img src="gallery/zdravstvo/sl21.png" class="slideHealth">
+                    <img src="gallery/zdravstvo/sl22.png" class="slideHealth">
+                    <img src="gallery/zdravstvo/sl23.png" class="slideHealth">
+                    <img src="img/next1.svg" id="next" onclick="slideR(this)">
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                  <h1>Dukserice</h1>
+                <div class="wrap">
+                  <img src="img/prev1.svg" id="prev" onclick="slideL(this)">
+                  <img src="gallery/dukserice/sl1.png" class="slideHoodies">
+                  <img src="gallery/dukserice/sl2.png" class="slideHoodies">
+                  <img src="gallery/dukserice/sl3.png" class="slideHoodies">
+                  <img src="img/next1.svg" id="next" onclick="slideR(this)">
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                  <h1>Kuvarske uniforme</h1>
+                  <div class="wrap">
+                    <img src="img/prev1.svg" id="prev" onclick="slideL(this)">
+                    <img src="gallery/kuvarske-uniforme/sl10.png" class="slideCook">
+                    <img src="gallery/kuvarske-uniforme/sl11.png" class="slideCook">
+                    <img src="img/next1.svg" id="next" onclick="slideR(this)">
+                  </div>
+              </div>
+            </div>
+        </section>
+
+        <!--JS FOR IMAGE SLIDE  -->
+
+            <script type="text/javascript">
+
+            var sliderImagesHTZ = document.getElementsByClassName('slideHTZ'),
+                sliderImagesSport = document.getElementsByClassName('slideSport'),
+                sliderImagesShirts = document.getElementsByClassName('slideShirts'),
+                sliderImagesHealth = document.getElementsByClassName('slideHealth'),
+                sliderImagesHoodies = document.getElementsByClassName('slideHoodies'),
+                sliderImagesCook = document.getElementsByClassName('slideCook'),
+                arrowRight = document.getElementById('next'),
+                arrowLeft = document.getElementById('prev'),
+                currentHTZ = {index: 0},
+                currentSport = {index: 0},
+                currentShirts = {index: 0},
+                currentHealth = {index: 0},
+                currentHoodies = {index: 0},
+                currentCook = {index: 0},
+                sliders = [sliderImagesHTZ, sliderImagesSport, sliderImagesShirts, sliderImagesHealth,sliderImagesHoodies,sliderImagesCook],
+                j,
+                i;
+
+            function reset() {
+              for( j = 0; j < sliders.length; j++)  {
+                for( i = 0; i < sliders[j].length; i++) {
+                  sliders[j][i].style.display = "none"
+                }
+              }
+            }
+
+            function resetSlider(s) {
+                for( i = 0; i < s.length; i++) {
+                  s[i].style.display = "none"
+                }
+            }
+
+            function startSlide() {
+              reset();
+              sliderImagesHTZ[0].style.display = "block"
+              sliderImagesSport[0].style.display = "block"
+              sliderImagesShirts[0].style.display = "block"
+              sliderImagesHealth[0].style.display = "block"
+              sliderImagesHoodies[0].style.display = "block"
+              sliderImagesCook[0].style.display = "block"
+            }
+
+            function getSlider(className) {
+              switch (className) {
+                case 'slideHTZ':
+                  return sliderImagesHTZ
+
+                case 'slideSport':
+                  return sliderImagesSport
+
+                case 'slideShirts':
+                  return sliderImagesShirts
+
+                case 'slideHealth':
+                  return sliderImagesHealth
+
+                case 'slideHoodies':
+                  return sliderImagesHoodies
+
+                case 'slideCook':
+                  return sliderImagesCook
+
+                default:
+                  return 'Error'
+              }
+            }
+
+            function getIndex(className) {
+              switch (className) {
+                case 'slideHTZ':
+                  return currentHTZ
+
+                case 'slideSport':
+                  return currentSport
+
+                case 'slideShirts':
+                  return currentShirts
+
+                case 'slideHealth':
+                  return currentHealth
+
+                case 'slideHoodies':
+                  return currentHoodies
+
+                case 'slideCook':
+                  return currentCook
+
+                default:
+                  return 'Error'
+              }
+            }
+
+            // Left arrow
+
+            function slideLeft(s, current) {
+              resetSlider(s)
+              s[current.index - 1].style.display = "block"
+              current.index --
+            }
+
+            function slideL(element) {
+              s = getSlider(element.nextElementSibling.className)
+              current = getIndex(element.nextElementSibling.className)
+              if (current.index == 0) {
+                current.index = s.length
+              }
+              slideLeft(s, current)
+            }
+
+            // Right arrow
+
+            function slideR(element) {
+              s = getSlider(element.previousElementSibling.className)
+              current = getIndex(element.previousElementSibling.className)
+              if (current.index == s.length - 1) {
+                current.index = -1
+              }
+              slideRight(s, current)
+            }
+
+            function slideRight(s, current) {
+              resetSlider(s)
+              s[current.index + 1].style.display = "block"
+              current.index ++
+            }
+
+
+            startSlide();
+
+              </script>
+
+            <!-- Contact  -->
+
+            <section id="contact">
+              <div class="container text-center tekst">
+                <div class="row">
+                  <h1 class="title slova">Kontakt</h1>
+
+                  <h3><i class="fa fa-map-marker"></i> Nedeljka Merdovića, Nikoljac, Bijelo Polje</h3>
+
+                  <br>
+                  <form role="form" class="contact-form" method="post">
+                    <div class="col-md-6 wow fadeInLeft form" data-wow-delay=".5s">
+                      <div class="form-group">
+                        <div class="controls">
+                          <input type="text" class="form-control" placeholder="Ime" name="name" style="color:#34495e;">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="controls">
+                          <input type="email" class="form-control email" placeholder="Email" name="email" style="color:#940404;">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="controls">
+                          <input type="text" class="form-control requiredField" placeholder="Naslov" name="subject">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+
+                        <div class="controls">
+                          <textarea rows="7" class="form-control" placeholder="Poruka" name="message"></textarea>
+                        </div>
+                      </div>
+                      <button type="submit" id="submit" class="btn btn-lg btn-common">Posalji</button><div id="success" style="color:#34495e;"></div>
+
+                    </div>
+                  </form>
+
+
+                <div class="contact-info">
+
+                </div>
+
+                    <div id="map"></div>
+
+                <script>
+                function myMap() {
+                  var mapCanvas = document.getElementById("map");
+                  var mapOptions = {
+                    center: new google.maps.LatLng(43.028751, 19.742692), zoom: 16
+                  };
+                  var map = new google.maps.Map(mapCanvas, mapOptions);
+                }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDc63w9ONc-sbR_mOP2ZkkUzGmxeae5ZI8&callback=myMap"></script>
+                    <br>
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <!-- Copyright  -->
+
+            <div id="copyright">
+              <div class="container">
+                <div class="col-md-10"><p>© 2018 All right reserved. Bitex Bijelo Polje</p></div>
+                <div class="col-md-2">
+                    <span class="to-top pull-right"><a href="#hero-area"><i class="fa fa-angle-up fa-2x"></i></a></span>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+  </body>
+</html>

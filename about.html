@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/cycle2.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>MB Bitex</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+      <nav class="fill">
+        <img id="logo" src="img/logo.png" alt="Bitex">
+        <ul>
+          <li> <a href="#contact"> Kontakt</a></li>
+          <li> <a href="printing.html"> Sito štampa </a></li>
+          <li> <a href="#"> O nama </a></li>
+          <li> <a href="index.html"> Proizvodi </a></li>
+          <li> <a href="index.html"> Naslovna </a></li>
+        </ul>
+      </nav>
+    
+
+      <script type="text/javascript">
+        $(function() {
+          $('#hamburger').click(function() {
+            $('nav').toggle(1000);
+          })
+        })
+      </script>
+
+      <div class="header-about">
+        <img id="hamburger" src="img/hamburger1.png">
+        <img src="img/proba.jpg" alt="">
+      </div>
+      <!-- About  -->
+
+      <section class="about-us">
+        <h1>O nama</h1>
+        <p>Firma Bitex a kasnije MB Bitex je osnovana 1989. godine, u Bijelom Polju,
+           kao mala zanatska radnja. Kao osnovnu djelatnost ima proizvodnju i veleprodaju čarapa
+           (muške, dječije i sportske) te je za kratko vrijeme postala uspješno preduzeće prepoznatljiva po
+           proizvodnji kvalitetnih čarapa modernog dizajna. Cjelokupan asortiman je proizveden od
+           najkvalitetnijih materijala renomiranih svjetskih proizvođača. Cilj preduzeća je da konstantnim
+           usavršavanjem proizvodnje i kreiranjem kvalitetnih proizvoda postane jedan od najuspješnijih
+           proizvođača čarapa na tržištu. Proizvodni pogon se sastoji od modernih mašina koje u zavisnosti
+           od tipa i prediva mogu proizvesti široku paletu proizvoda. Kvalitetno pletenje, velika paleta boja i
+            maštoviti dezeni zaštitni su znak za naše čarape. Proširavanjem asortimana i modernizacijom proizvodnje u
+            svoj proizvodni program uključujemo: - HTZ opremu : radna odijela, kombinezone, prsluce, odjeću za zdravstvo
+            (mantili, pantalone, jakne), odjeća namijenjena za tgovačkle centre (majice, dukserice, kecelje, mantili i dr.)
+             - Sportsku opremu : trenerke, dresove, majice.</p>
+             <img src="img/onama.jpg" alt="O nama">
+      </section>
+
+
+      <!-- Contact  -->
+
+      <section id="contact">
+        <div class="container text-center tekst">
+          <div class="row">
+            <h1 class="title slova">Kontakt</h1>
+
+            <h3><i class="fa fa-map-marker"></i> Nedeljka Merdovića, Nikoljac, Bijelo Polje</h3>
+
+            <br>
+            <form role="form" class="contact-form" method="post">
+              <div class="col-md-6 wow fadeInLeft form" data-wow-delay=".5s">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" class="form-control" placeholder="Ime" name="name" style="color:#34495e;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="email" class="form-control email" placeholder="Email" name="email" style="color:#940404;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" class="form-control requiredField" placeholder="Naslov" name="subject">
+                  </div>
+                </div>
+
+                <div class="form-group">
+
+                  <div class="controls">
+                    <textarea rows="7" class="form-control" placeholder="Poruka" name="message"></textarea>
+                  </div>
+                </div>
+                <button type="submit" id="submit" class="btn btn-lg btn-common">Posalji</button><div id="success" style="color:#34495e;"></div>
+
+              </div>
+            </form>
+
+
+          <div class="contact-info">
+
+          </div>
+
+              <div id="map"></div>
+
+          <script>
+          function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+              center: new google.maps.LatLng(43.028751, 19.742692), zoom: 16
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDc63w9ONc-sbR_mOP2ZkkUzGmxeae5ZI8&callback=myMap"></script>
+              <br>
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright  -->
+
+      <div id="copyright">
+        <div class="container">
+          <div class="col-md-10"><p>© 2018 All right reserved. Bitex Bijelo Polje</p></div>
+          <div class="col-md-2">
+              <span class="to-top pull-right"><a href="#hero-area"><i class="fa fa-angle-up fa-2x"></i></a></span>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>

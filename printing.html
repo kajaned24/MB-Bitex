@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/cycle2.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/printing.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>MB Bitex</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+      <nav class="fill">
+        <img id="logo" src="img/logo.png" alt="Bitex">
+        <ul>
+          <li> <a href="#contact"> Kontakt</a></li>
+          <li> <a href="#"> Sito štampa </a></li>
+          <li> <a href="about.html"> O nama </a></li>
+          <li> <a href="index.html"> Proizvodi </a></li>
+          <li> <a href="index.html"> Naslovna </a></li>
+        </ul>
+      </nav>
+
+      <script type="text/javascript">
+        $(function() {
+          $('#hamburger').click(function() {
+            $('nav').toggle(1000);
+          })
+        })
+      </script>
+
+      <div class="header-about">
+          <img id="hamburger" src="img/hamburger1.png">
+        <img src="img/sivenje.jpg" alt="">
+      </div>
+      <!-- About  -->
+
+      <section class="about-us">
+        <h1>Sito štampa</h1>
+        <h3>Najkvalitetnija štampa</h3>
+        <p>Sito štampa je tehnika štampe kod koje se otisak ostvaruje na taj način što se boja potiskuje kroz
+          štamparsku formu koja je izrađena od svile zategnute na drveni ili aluminijumski ram. Na mašinama za
+           sito štampu se mogu štampati uobičajeni grafički proizvodi, ali i oni namijenjeni specijalnim potrebama.
+           Sito štampom se može štampati u više boja na različitim materijalima i oblicima, cilindričnim, sfernim ili
+           savijenim oblicima. Zbog toga opseg primjene sitoštampe nije ograničen, tako da se može štampati na
+           staklenim, plastičnim, tekstilnim, metalnim, drvenim i keramičkim podlogama raznih oblika i namjena.
+           S obzirom na raznovrsne mogućnosti, ova tehnika je našla primjenu u mnogim drugim industrijskim granama,
+            a naročito pri štampanju gotovih proizvoda. Posebno mjesto zauzima u tekstilnoj industriji u kojoj se
+            štampaju najraznovrsniji tekstilni materijali.</p>
+             <img src="img/sito.jpg" alt="">
+      </section>
+
+
+      <!-- Contact  -->
+
+      <section id="contact">
+        <div class="container text-center tekst">
+          <div class="row">
+            <h1 class="title slova">Kontakt</h1>
+
+            <h3><i class="fa fa-map-marker"></i> Nedeljka Merdovića, Nikoljac, Bijelo Polje</h3>
+
+            <br>
+            <form role="form" class="contact-form" method="post">
+              <div class="col-md-6 wow fadeInLeft form" data-wow-delay=".5s">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" class="form-control" placeholder="Ime" name="name" style="color:#34495e;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="email" class="form-control email" placeholder="Email" name="email" style="color:#940404;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" class="form-control requiredField" placeholder="Naslov" name="subject">
+                  </div>
+                </div>
+
+                <div class="form-group">
+
+                  <div class="controls">
+                    <textarea rows="7" class="form-control" placeholder="Poruka" name="message"></textarea>
+                  </div>
+                </div>
+                <button type="submit" id="submit" class="btn btn-lg btn-common">Posalji</button><div id="success" style="color:#34495e;"></div>
+
+              </div>
+            </form>
+
+
+          <div class="contact-info">
+
+          </div>
+
+              <div id="map" ></div>
+
+          <script>
+          function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+              center: new google.maps.LatLng(43.028751, 19.742692), zoom: 16
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+          }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDc63w9ONc-sbR_mOP2ZkkUzGmxeae5ZI8&callback=myMap"></script>
+              <br>
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright  -->
+
+      <div id="copyright">
+        <div class="container">
+          <div class="col-md-10"><p>© 2018 All right reserved. Bitex Bijelo Polje</p></div>
+          <div class="col-md-2">
+              <span class="to-top pull-right"><a href="#hero-area"><i class="fa fa-angle-up fa-2x"></i></a></span>
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>

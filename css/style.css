@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+
+#hamburger {
+	display: none;
+}
+
+#logo {
+  float: left;
+  height: 20%;
+  margin-left: 20px;
+  width: 10%;
+}
+
+nav {
+  text-align: center;
+  height: 100%;
+  line-height: 5;
+}
+
+nav ul li {
+  float: right;
+  padding: 30px;
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  text-decoration: none;
+}
+
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+  padding: 13px;
+  display: block;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+@media (max-width: 958px) {
+
+	#hamburger {
+		display: block;
+    padding: 10px;
+    cursor: pointer;
+    width: 19%;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+  #logo {
+    display: none;
+  }
+
+  nav{
+	background-color: #fff;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	width: 100%;
+	z-index: 3;
+	height: 70px;
+	opacity: 1;
+  display: none;
+  }
+
+	nav li {
+  float: left;
+	width: 100vw;
+	height: 100%;
+  }
+
+  nav li a {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+  nav ul {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  nav li a {
+    display: block;
+    padding: 0;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+
+  nav li a:hover {
+    background-color: #f4f4f4;
+  }
+
+}
+
+
+/*  Header */
+
+.header {
+  height: 720px;
+  width: 100%;
+  margin-top: -8px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-clip-path: polygon(100% 0, 100% 87%, 51% 100%, 0 87%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 87%, 51% 100%, 0 87%, 0% 0%);
+}
+
+
+#slideshow {
+  width: 100%;
+  height: 100%;
+}
+
+#slideshow img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Main content */
+
+.offers {
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 50px;
+}
+
+#our-offers {
+  padding: 55px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.products {
+  height: 100%;
+  background-color: grey;
+  color: white;
+  padding: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.products h1 {
+  margin-bottom: -25px;
+  padding-top: 30px;
+}
+
+.wrap {
+  background-color: white;
+  height: 350px;
+  margin-top: 50px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.wrap img {
+  width: 100%;
+  height: 340px;
+}
+
+.wrap #img2 {
+  height: 290px;
+  margin-top: 20px;
+}
+
+
+#next {
+  height: 15%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 255px 30px;
+  cursor: pointer;
+}
+
+#prev {
+  height: 15%;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 256px 29px;
+  cursor: pointer;
+}
+
+/* Contact */
+
+#contact {
+  background: #f1f1f1;
+}
+
+#contact ::-webkit-input-placeholder {
+  color: #ecf0f1;
+}
+
+#contact :-moz-placeholder {
+  color: #ecf0f1;
+}
+
+#contact ::-moz-placeholder {
+  color: #ecf0f1;
+}
+
+#contact :-ms-input-placeholder {
+  color: #ecf0f1;
+}
+
+#contact .social i {
+  color: black;
+  padding: 10px;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  background: #34495e;
+}
+
+#contact .social .social-links a:hover {
+  color: #fff;
+}
+
+#contact .social .fa-facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+#contact .social .fa-twitter:hover {
+  background: #00CAFB;
+  color: #fff;
+}
+
+#contact .social .fa-google-plus:hover {
+  background: #D23A1D;
+  color: #fff;
+}
+
+#contact .social .fa-linkedin:hover {
+  background: #007bb6;
+  color: #fff;
+}
+
+#contact .social .fa-dribbble:hover {
+  background: #ea4c89;
+  color: #fff;
+}
+
+#contact .social .fa-github:hover {
+  background: #171515;
+  color: #fff;
+}
+
+#contact .contact-info {
+  margin: 40px 0;
+}
+
+#contact .contact-info p {
+  font-size: 20px;
+}
+
+#contact .contact-form .form-control {
+  box-shadow: none;
+  font-size: 17px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: none;
+}
+
+.slova {
+  margin-top: 40px;
+}
+
+.tekst h3 {
+  padding-top: 28px;
+}
+
+.form {
+  padding-top: 43px;
+}
+#map {
+  width:50%;
+  height:400px;
+}
+
+/* Copyright */
+
+#copyright {
+  background: #F1F1F1;
+  color: #333;
+}
+
+#copyright a {
+  color: #333;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:998px) {
+  #map {
+    width: 100%;
+  }
+  .products h1 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .offers h1 {
+    font-size: 22px
+  }
+  #our-offers {
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 2100px) and (min-width:1350px) {
+  #prev {
+
+  }
+  #next {
+
+  }
+}
