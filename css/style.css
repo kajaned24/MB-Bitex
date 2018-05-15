@@ -421,9 +421,9 @@ nav.fill ul li a:hover:after {
 
 @media screen and (max-width: 2100px) and (min-width:1350px) {
   #prev {
-
+    width: 33%;
   }
   #next {
-
+    width: 33%;
   }
 }
